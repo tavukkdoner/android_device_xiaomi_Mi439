@@ -128,8 +128,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.use_psi=true \
     ro.lmk.psi_partial_stall_ms=180 \
     ro.lmk.psi_complete_stall_ms=700 \
-    ro.lmk.thrashing_limit=30 \
-    ro.lmk.thrashing_limit_decay=40 \
     ro.lmk.swap_util_max=100 \
     ro.lmk.log_stats=true
 
