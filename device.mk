@@ -110,6 +110,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    dalvik.vm.usap_pool_enabled=true
 
 # Viper
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
