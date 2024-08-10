@@ -114,6 +114,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Viper
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Google Camera Go
+$(call inherit-product, packages/apps/CameraGo/config.mk)
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/Mi439/Mi439-vendor.mk)
 
