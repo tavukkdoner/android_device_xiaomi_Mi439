@@ -115,10 +115,14 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Google Camera Go
+ifeq ($(WITH_GOOGLE_CAM_GO),true)
 $(call inherit-product, packages/apps/CameraGo/config.mk)
+endif
 
 # Google Gallery Go
+ifeq ($(WITH_GOOGLE_CAM_GO),true)
 $(call inherit-product, packages/apps/GalleryGo/config.mk)
+endif
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/Mi439/Mi439-vendor.mk)
