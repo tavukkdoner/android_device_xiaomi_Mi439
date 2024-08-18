@@ -35,12 +35,6 @@ $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
-BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE = erofs
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE = erofs
-BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE = erofs
-BOARD_ODMIMAGE_FILE_SYSTEM_TYPE = erofs
-BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE = erofs
-
 # Wi-Fi firmware symlinks
 TARGET_FIRMWARE_WLAN_MAC_BIN_SYMLINK_TARGET := /mnt/vendor/persist/.wlan_mac.bin
 
