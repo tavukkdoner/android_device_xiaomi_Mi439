@@ -32,4 +32,4 @@ odm						/odm			erofs	ro								wait,logical,first_stage_mount
 /devices/platform/soc/78db000.usb/msm_hsusb_host*     auto	auto    defaults							wait,voldmanaged=usb:auto
 
 # ZRAM
-/dev/block/zram0                            none         swap    defaults                                    zramsize=50%
+/dev/block/zram0                            none         swap    defaults                                    zramsize=75%
