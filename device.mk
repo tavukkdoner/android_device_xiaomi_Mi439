@@ -124,11 +124,6 @@ ifeq ($(WITH_GOOGLE_CAM_GO),true)
 $(call inherit-product, packages/apps/GalleryGo/config.mk)
 endif
 
-# GMS
-ifeq ($(WITH_GMS),true)
-GMS_MAKEFILE=gms_minimal.mk
-endif
-
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/Mi439/Mi439-vendor.mk)
 
