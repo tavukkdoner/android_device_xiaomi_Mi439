@@ -1,2 +1,7 @@
 # Xiaomi Mi439 - FM Radio
 hw.fm.internal_antenna=1
+
+# set threshold to filter unused apps
+pm.dexopt.downgrade_after_inactive_days=3
+# set the compiler filter for shared apks to quicken.
+pm.dexopt.shared=quicken
