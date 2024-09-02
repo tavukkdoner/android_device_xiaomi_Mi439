@@ -15,7 +15,6 @@ TARGET_USES_DEVICE_SPECIFIC_KEYMASTER := true
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
-TARGET_USES_VULKAN := true
 
 # Inherit from mithorium-common
 $(call inherit-product, device/xiaomi/mithorium-common/mithorium.mk)
