@@ -133,6 +133,7 @@ endif
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
+TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(COMMON_PATH):libperfmgr-ext-xiaomi
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
