@@ -135,7 +135,11 @@ endif
 TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
 
 # Properties
+ifeq ($(WITH_CUST_LMKD),true)
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product1.prop
+else
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+endif
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 

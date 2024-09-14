@@ -18,6 +18,9 @@ TARGET_KERNEL_VERSION := 4.19
 # Google Camera Go and Google Gallery Go
 WITH_GOOGLE_CAM_GO := true
 
+# Custom LMKD
+WITH_CUST_LMKD := true
+
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
 
