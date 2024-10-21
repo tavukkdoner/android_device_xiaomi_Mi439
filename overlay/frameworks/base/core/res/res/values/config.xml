@@ -30,4 +30,10 @@
 	
     <!-- True if the device supports Sustained Performance Mode -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
+	
+    <!-- Define device configs on boot -->
+    <string-array name="global_device_configs_override" translatable="false">
+        <!-- Cache apps freezer -->
+        <item>activity_manager_native_boot/use_freezer=true</item>	
+    </string-array>
 </resources>
