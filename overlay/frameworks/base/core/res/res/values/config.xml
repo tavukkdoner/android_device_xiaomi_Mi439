@@ -35,5 +35,8 @@
     <string-array name="global_device_configs_override" translatable="false">
         <!-- Cache apps freezer -->
         <item>activity_manager_native_boot/use_freezer=true</item>	
+		
+        <!-- Enable Re-rank oom adjust scores -->
+        <item>activity_manager/use_oom_re_ranking=true</item>
     </string-array>
 </resources>
