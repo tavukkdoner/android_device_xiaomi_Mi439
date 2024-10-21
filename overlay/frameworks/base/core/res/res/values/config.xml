@@ -41,5 +41,8 @@
 		
         <!-- Enable proactive killing cached apps -->
         <item>activity_manager/proactive_kills_enabled=true</item>
+		
+        <!-- LMKD Thrashing Limit Critical -->
+        <item>lmkd_native/thrashing_limit_critical=300</item>
     </string-array>
 </resources>
