@@ -42,6 +42,10 @@
         <!-- Enable proactive killing cached apps -->
         <item>activity_manager/proactive_kills_enabled=true</item>
 		
+        <!-- Enable oom_adj_score tiers for cached apps -->
+        <item>activity_manager/use_tiered_cached_adj=true</item>
+        <item>activity_manager/tiered_cached_adj_decay_time=60000</item>
+		
         <!-- LMKD Thrashing Limit Critical -->
         <item>lmkd_native/thrashing_limit_critical=300</item>
     </string-array>
