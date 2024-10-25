@@ -36,6 +36,9 @@
         <!-- Cache apps freezer -->
         <item>activity_manager_native_boot/use_freezer=true</item>	
 		
+        <!-- Enable the new oom adjuster implementation -->
+        <item>activity_manager_native_boot/enable_new_oom_adj=true</item>
+		
         <!-- Enable Re-rank oom adjust scores -->
         <item>activity_manager/use_oom_re_ranking=true</item>
 		
