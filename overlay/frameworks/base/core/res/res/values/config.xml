@@ -39,6 +39,9 @@
         <!-- Enable the new oom adjuster implementation -->
         <item>activity_manager_native_boot/enable_new_oom_adj=true</item>
 		
+        <!-- Enable the batching of OOM adjuster calls to LMKD -->
+        <item>activity_manager_native_boot/enable_batching_oom_adj=true</item>
+		
         <!-- Enable Re-rank oom adjust scores -->
         <item>activity_manager/use_oom_re_ranking=true</item>
 		
