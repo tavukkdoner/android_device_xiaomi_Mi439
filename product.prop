@@ -21,3 +21,13 @@ ro.lmk.log_stats=true
 ro.lmk.exclude_tasknames=true
 ro.lmk.excluded_tasknames=com.brave.browser,com.wstxda.viper4android,com.android.launcher3
 ro.lmk.debug_mem_info=false
+
+# Broadcast Parameters used isLowRamDeviceStatic values
+persist.device_config.activity_manager_native_boot.bcast_max_running_active_broadcasts=8
+persist.device_config.activity_manager_native_boot.bcast_max_core_running_blocking_broadcasts=8
+persist.device_config.activity_manager_native_boot.bcast_max_core_running_non_blocking_broadcasts=32
+persist.device_config.activity_manager_native_boot.bcast_max_pending_broadcasts=128
+persist.device_config.activity_manager_native_boot.bcast_max_history_complete_size=64
+persist.device_config.activity_manager_native_boot.bcast_max_history_summary_size=256
+persist.device_config.activity_manager_native_boot.bcast_max_running_process_queues=2
+
