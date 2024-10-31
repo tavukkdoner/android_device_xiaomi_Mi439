@@ -34,6 +34,10 @@
     <!-- Whether or not the monitoring on the apps' background battery drain is enabled -->
     <bool name="config_bg_current_drain_monitor_enabled">true</bool>
 	
+    <!-- Flag indicating whether we should enable the adaptive sleep.-->
+    <bool name="config_adaptive_sleep_available">true</bool>
+
+	
     <!-- Define device configs on boot -->
     <string-array name="device_configs_override" translatable="false">
         <!-- Cache apps freezer -->
