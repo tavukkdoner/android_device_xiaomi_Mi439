@@ -36,3 +36,6 @@ persist.sys.zram_enabled=1
 
 # ZRAM Force Writeback while using device
 zram.force_writeback=false
+
+# Set Max Background Services
+ro.config.max_starting_bg=3
