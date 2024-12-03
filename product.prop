@@ -31,3 +31,9 @@ persist.device_config.activity_manager_native_boot.bcast_max_history_complete_si
 persist.device_config.activity_manager_native_boot.bcast_max_history_summary_size=256
 persist.device_config.activity_manager_native_boot.bcast_max_running_process_queues=2
 
+# ZRAM Force Writeback while using device
+zram.force_writeback=false
+
+# Set Max Background Services
+ro.config.max_starting_bg=3
+
