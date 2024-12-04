@@ -90,13 +90,13 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/swappiness 100
 	
     # Boot time cpuset and stune
-    write /dev/cpuset/top-app/cpus 2-7
+    write /dev/cpuset/top-app/cpus 0-6
     write /dev/cpuset/foreground/cpus 0-5
-    write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/restricted/cpus 0-1
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "conservative"
-    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "conservative"
+    write /dev/cpuset/background/cpus 4-7
+    write /dev/cpuset/system-background/cpus 4-7
+    write /dev/cpuset/restricted/cpus 6-7
+    # write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "conservative"
+    # write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "conservative"
     write /dev/cpuset/cpu_exclusive 0
     write /dev/cpuset/memory_pressure_enabled 1
 
