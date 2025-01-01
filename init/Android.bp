@@ -23,32 +23,33 @@ xiaomi_mi439_rootdir_prebuilt_etc {
     soong_config_variables: {
         KERNEL_VERSION: {
             k4_9: {
-                src: "etc/fstab_4_9.qcom",
+                src: "fstab_4_9.qcom",
             },
             k4_19: {
-                src: "etc/fstab_4_19.qcom",
+                src: "fstab_4_19.qcom",
             },
             conditions_default: {
-                src: "etc/fstab_4_9.qcom",
+                src: "fstab_4_9.qcom",
             },
         },
     },
-    vendor: true,
+    soc_specific: true,
+    ramdisk_available: true,
 }
 
 // Init scripts
 
 prebuilt_etc {
     name: "init.xiaomi.device.rc",
-    src: "etc/init.xiaomi.device.rc",
+    src: "init.xiaomi.device.rc",
     sub_dir: "init/hw",
-    vendor: true,
+    soc_specific: true,
 }
 
 // Configuration scripts
 
 sh_binary {
     name: "init.xiaomi.device.sh",
-    src: "bin/init.xiaomi.device.sh",
-    vendor: true,
+    src: "init.xiaomi.device.sh",
+    soc_specific: true,
 }

@@ -146,9 +146,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
 ifeq ($(TARGET_KERNEL_VERSION),4.19)
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab_4_19.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab_4_19.qcom
 else
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab_4_9.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab_4_9.qcom
 endif
 
 # Releasetools
