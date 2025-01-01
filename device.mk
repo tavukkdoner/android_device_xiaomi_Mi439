@@ -78,6 +78,12 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
+	
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom.ramdisk \
+    init.xiaomi.device.rc \
+    init.xiaomi.device.sh
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -95,12 +101,6 @@ PRODUCT_PACKAGES += \
 # Recovery
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi439/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hvdcp_opti
-
-# Rootdir
-PRODUCT_PACKAGES += \
-    fstab.qcom_ramdisk \
-    init.xiaomi.device.rc \
-    init.xiaomi.device.sh
 
 # Shims
 PRODUCT_PACKAGES += \
