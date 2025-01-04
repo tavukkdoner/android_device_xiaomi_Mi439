@@ -36,6 +36,9 @@ persist.sys.zram_enabled=1
 
 # ZRAM Force Writeback while using device
 zram.force_writeback=false
+ro.zram.mark_idle_delay_mins=20
+ro.zram.first_wb_delay_mins=60
+ro.zram.periodic_wb_delay_hours=2
 
 # Set Max Background Services
 ro.config.max_starting_bg=3
