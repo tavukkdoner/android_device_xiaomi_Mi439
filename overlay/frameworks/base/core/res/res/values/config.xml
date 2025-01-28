@@ -102,5 +102,14 @@
 		
         <!-- LMKD Thrashing Limit Critical -->
         <item>lmkd_native/thrashing_limit_critical=300</item>
+
+        <!-- The maximum number of jobs we'll attempt to have running at one time. -->
+        <item>jobscheduler/concurrency_limit=8</item>
+
+        <!-- Minimum # of jobs that have to be ready for JS to be happy running work -->
+        <item>jobscheduler/min_ready_cpu_only_jobs_count=2</item>
+
+        <!-- Minimum # of non-ACTIVE jobs that have to be ready for JS to be happy running work. -->
+        <item>jobscheduler/min_ready_non_active_jobs_count=3</item>
     </string-array>
 </resources>
