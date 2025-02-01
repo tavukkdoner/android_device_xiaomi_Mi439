@@ -77,7 +77,8 @@ PRODUCT_PACKAGES += \
 
 # RevampedFMRadio
 PRODUCT_PACKAGES += \
-    RevampedFMRadio
+    RevampedFMRadio \
+    libqcomfmjni
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
