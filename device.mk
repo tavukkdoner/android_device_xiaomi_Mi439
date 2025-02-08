@@ -118,7 +118,6 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    packages/apps/RevampedFMRadio/jni \
     $(LOCAL_PATH)
 
 
