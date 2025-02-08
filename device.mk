@@ -107,11 +107,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/Mi439/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hvdcp_opti
 
-# RevampedFMRadio
-PRODUCT_PACKAGES += \
-    RevampedFMRadio \
-    libqcomfmjni
-	
 # Shims
 PRODUCT_PACKAGES += \
     libhidlbase_shim
