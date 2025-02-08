@@ -107,6 +107,8 @@ PRODUCT_PACKAGES += \
     RevampedFMRadio \
     libqcomfmjni
 	
+$(call soong_config_set_bool,libqcomfmjni,no_fm_firmware,true)
+	
 # Shims
 PRODUCT_PACKAGES += \
     libhidlbase_shim
