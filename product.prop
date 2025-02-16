@@ -40,3 +40,6 @@ ro.zram.periodic_wb_delay_hours=2
 # Set Max Background Services
 ro.config.max_starting_bg=3
 
+# Allow Avoiding GFX Acceleration
+ro.config.avoid_gfx_accel=true
+
