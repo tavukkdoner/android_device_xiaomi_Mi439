@@ -109,7 +109,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libhidlbase_shim
+    libhidlbase_shim \
+    camera.Mi439_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
