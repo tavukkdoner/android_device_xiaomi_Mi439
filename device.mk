@@ -116,7 +116,8 @@ $(call soong_config_set_bool,libqcomfmjni,no_fm_firmware,true)
 	
 # Shims
 PRODUCT_PACKAGES += \
-    libhidlbase_shim
+    libhidlbase_shim \
+    camera.Mi439_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
