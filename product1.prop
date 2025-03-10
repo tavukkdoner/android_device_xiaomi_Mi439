@@ -46,6 +46,9 @@ ro.config.max_starting_bg=3
 # Allow Avoiding GFX Acceleration
 ro.config.avoid_gfx_accel=true
 
+# Brightness Curve
+persist.sys.brightness.low.gamma=true
+
 # Tune Dex2oat Parameters
 dalvik.vm.dex2oat-cpu-set=0,1,2,3
 dalvik.vm.dex2oat-swap=true
