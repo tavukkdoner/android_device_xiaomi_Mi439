@@ -19,7 +19,7 @@ ro.lmk.psi_complete_stall_ms=700
 ro.lmk.swap_util_max=100
 ro.lmk.log_stats=true
 ro.lmk.exclude_tasknames=true
-ro.lmk.excluded_tasknames=com.brave.browser,com.wstxda.viper4android,com.android.launcher3
+ro.lmk.excluded_tasknames=com.brave.browser,com.wstxda.viper4android,com.android.launcher3,com.android.webview
 ro.lmk.debug_mem_info=false
 
 # Broadcast Parameters used isLowRamDeviceStatic values
