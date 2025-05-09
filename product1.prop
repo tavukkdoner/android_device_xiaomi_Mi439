@@ -44,7 +44,7 @@ ro.zram.periodic_wb_delay_hours=2
 ro.config.max_starting_bg=3
 
 # Allow Avoiding GFX Acceleration
-ro.config.avoid_gfx_accel=false
+ro.config.avoid_gfx_accel=true
 
 # Brightness Curve
 sys.brightness.disable_gamma_conversion=true
