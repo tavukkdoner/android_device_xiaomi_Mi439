@@ -89,6 +89,8 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk \
     init.xiaomi.device.rc \
     init.xiaomi.device.sh
+	
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_mi439)
 
 # Input
 PRODUCT_COPY_FILES += \
