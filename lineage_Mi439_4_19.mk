@@ -24,6 +24,31 @@ WITH_GOOGLE_CAM_GO := true
 # Custom LMKD
 WITH_CUST_LMKD := true
 
+# Rear camera specs
+AXION_CAMERA_REAR_INFO := 5  # Example: 50MP + 48MP
+
+# Front camera specs
+AXION_CAMERA_FRONT_INFO := 13  # Example: 42MP
+
+# Maintainer name
+AXION_MAINTAINER := tavukkdoner
+
+# Processor name
+AXION_PROCESSOR := SDM439
+
+# Define small and big core groups
+AXION_CPU_SMALL_CORES := 4,5,6,7
+AXION_CPU_BIG_CORES := 0,1,2,3
+# Used by cpu limiter and performance mode
+# Background cores used for non-critical cpusets 
+AXION_CPU_BG := 5-7
+# Background cores used for foreground cpusets
+AXION_CPU_FG := 0-5
+# CPU cores that will be used when limiting other cpusets except top-app
+AXION_CPU_LIMIT_BG := 6-7
+# Wether to enable debugging for adb logcat purposes
+AXION_DEBUGGING_ENABLED := true
+
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
 
