@@ -25,10 +25,10 @@ WITH_GOOGLE_CAM_GO := true
 WITH_CUST_LMKD := true
 
 # Rear camera specs
-AXION_CAMERA_REAR_INFO := 5  # Example: 50MP + 48MP
+AXION_CAMERA_REAR_INFO := 5
 
 # Front camera specs
-AXION_CAMERA_FRONT_INFO := 13  # Example: 42MP
+AXION_CAMERA_FRONT_INFO := 13
 
 # Maintainer name
 AXION_MAINTAINER := tavukkdoner
@@ -48,6 +48,8 @@ AXION_CPU_FG := 0-5
 AXION_CPU_LIMIT_BG := 6-7
 # Wether to enable debugging for adb logcat purposes
 AXION_DEBUGGING_ENABLED := true
+# ViperFX
+TARGET_INCLUDE_VIPERFX := true
 
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
