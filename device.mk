@@ -128,7 +128,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 
 # Viper
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+#$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Google Camera Go
 ifeq ($(WITH_GOOGLE_CAM_GO),true)
