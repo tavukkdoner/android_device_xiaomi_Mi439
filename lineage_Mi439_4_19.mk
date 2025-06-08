@@ -50,6 +50,8 @@ AXION_CPU_LIMIT_BG := 6-7
 AXION_DEBUGGING_ENABLED := true
 # ViperFX
 TARGET_INCLUDE_VIPERFX := true
+# Matlog
+TARGET_INCLUDE_MATLOG := true
 
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
