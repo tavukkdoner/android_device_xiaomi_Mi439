@@ -141,9 +141,9 @@ $(call inherit-product, packages/apps/GalleryGo/config.mk)
 endif
 
 # Google Apps
-ifeq ($(TARGET_USES_EROFS), true)
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
-endif
+# ifeq ($(TARGET_USES_EROFS), true)
+# $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+# endif
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/Mi439/Mi439-vendor.mk)
