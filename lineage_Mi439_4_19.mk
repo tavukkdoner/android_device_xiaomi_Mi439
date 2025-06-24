@@ -46,12 +46,22 @@ AXION_CPU_BG := 5-7
 AXION_CPU_FG := 0-5
 # CPU cores that will be used when limiting other cpusets except top-app
 AXION_CPU_LIMIT_BG := 6-7
+# CPUset that will be used to unlimit critical cpusets for UI
+AXION_CPU_UNLIMIT_UI = 0-7
+# CPUset that will be used when limiting critical cpusets for UI
+AXION_CPU_LIMIT_UI = 4-7
+# CPUset that will be used for critical display processes
+AXION_CPU_DISPLAY = 0-4
+# CPUset that will be used for audio processes e.g. audioserver
+AXION_CPU_AUDIO = 4-7
 # Wether to enable debugging for adb logcat purposes
 AXION_DEBUGGING_ENABLED := true
 # ViperFX
 TARGET_INCLUDE_VIPERFX := true
 # Matlog
 TARGET_INCLUDE_MATLOG := true
+# LOS Prebuilts
+TARGET_INCLUDES_LOS_PREBUILTS = true
 
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
