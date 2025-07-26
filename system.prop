@@ -5,3 +5,4 @@ hw.fm.internal_antenna=1
 pm.dexopt.downgrade_after_inactive_days=3
 # set the compiler filter for shared apks to speed.
 pm.dexopt.shared=speed
+ro.cherish.maintainer=tavukkdoner
