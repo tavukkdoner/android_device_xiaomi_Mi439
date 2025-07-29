@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
@@ -27,12 +27,34 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
-PRODUCT_NAME := lineage_Mi439_4_19
+PRODUCT_NAME := infinity_Mi439_4_19
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SDM439
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
+
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := tavukkdoner
+
+# Define small and big core groups
+AXION_CPU_SMALL_CORES = 4,5,6,7
+AXION_CPU_BIG_CORES = 0,1,2,3
+# Used by cpu limiter and performance mode
+# Background cores used for non-critical cpusets 
+AXION_CPU_BG = 5-7
+# Background cores used for foreground cpusets
+AXION_CPU_FG = 0-7
+# CPU cores that will be used when limiting other cpusets except top-app
+AXION_CPU_LIMIT_BG = 6-7
+# CPUset that will be used to unlimit critical cpusets for UI
+AXION_CPU_UNLIMIT_UI = 0-7
+# CPUset that will be used when limiting critical cpusets for UI
+AXION_CPU_LIMIT_UI = 4-7
+# CPUset that will be used for critical display processes
+AXION_CPU_DISPLAY = 0-4
+# CPUset that will be used for audio processes e.g. audioserver
+AXION_CPU_AUDIO = 4-7
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
