@@ -5,3 +5,8 @@ hw.fm.internal_antenna=1
 pm.dexopt.downgrade_after_inactive_days=3
 # set the compiler filter for shared apks to speed.
 pm.dexopt.shared=speed
+ro.product.marketname=Mi439
+ro.infinity.soc=SDM439
+ro.infinity.battery=4000 mAh
+ro.infinity.display=720 x 1440, 60 Hz
+ro.infinity.camera=12 MP + 5 MP
