@@ -1,12 +1,7 @@
 # LMKD
 
 ro.lmk.low=1001
-ro.lmk.medium=800
 ro.lmk.critical=0
-ro.lmk.critical_upgrade=true
-ro.lmk.upgrade_pressure=30
-ro.lmk.downgrade_pressure=60
-ro.lmk.kill_heaviest_task=false
 ro.lmk.use_minfree_levels=false
 ro.lmk.swap_free_low_percentage=5
 ro.lmk.thrashing_limit=50
@@ -46,15 +41,11 @@ ro.config.avoid_gfx_accel=false
 sys.brightness.disable_gamma_conversion=true
 
 # Tune Dex2oat Parameters
-dalvik.vm.dex2oat-cpu-set=0,1,2,3
 dalvik.vm.dex2oat-swap=true
-dalvik.vm.dex2oat-threads=4
 dalvik.vm.background-dex2oat-cpu-set=0,1,2,3
 dalvik.vm.background-dex2oat-threads=4
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.boot-dex2oat-threads=8
-dalvik.vm.restore-dex2oat-cpu-set=0,1,2,3
-dalvik.vm.restore-dex2oat-threads=4
 pm.dexopt.bg-dexopt.concurrency=4
 pm.dexopt.post-boot.concurrency=4
 pm.dexopt.first-boot.concurrency=8
