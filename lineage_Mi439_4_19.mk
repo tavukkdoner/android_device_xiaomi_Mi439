@@ -12,6 +12,33 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# EPPE
+TARGET_DISABLE_EPPE := true
+
+# Rear camera specs
+AXION_CAMERA_REAR_INFO := 5
+
+# Front camera specs
+AXION_CAMERA_FRONT_INFO := 13
+
+# Maintainer name
+AXION_MAINTAINER := tavukkdoner
+
+# Processor name
+AXION_PROCESSOR := SDM439
+
+# Dex2oat - recommended: 2 small cores only
+DEX2OAT_CORES = 6,7
+DEX2OAT_THREADS = 2
+# ViperFX
+TARGET_INCLUDE_VIPERFX = true
+# Matlog
+TARGET_INCLUDE_MATLOG = true
+# LOS Prebuilts
+TARGET_INCLUDES_LOS_PREBUILTS = true
+# Flashlight strength
+TORCH_STR_SUPPORTED = true
+
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
 
