@@ -120,8 +120,6 @@ PRODUCT_SOONG_NAMESPACES += \
     packages/apps/RevampedFMRadio/jni \
     $(LOCAL_PATH)
 
-# Viper
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Google Camera Go
 $(call inherit-product, packages/apps/CameraGo/config.mk)

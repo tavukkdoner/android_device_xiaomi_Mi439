@@ -1,12 +1,7 @@
 # LMKD
 
 ro.lmk.low=1001
-ro.lmk.medium=800
 ro.lmk.critical=0
-ro.lmk.critical_upgrade=true
-ro.lmk.upgrade_pressure=30
-ro.lmk.downgrade_pressure=60
-ro.lmk.kill_heaviest_task=false
 ro.lmk.use_minfree_levels=false
 ro.lmk.swap_free_low_percentage=5
 ro.lmk.thrashing_limit=50
