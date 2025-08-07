@@ -1,0 +1,66 @@
+
+cc_library_shared {
+    name: "libmmcamera_interface",
+
+    header_libs: [
+        "libhardware_headers", 
+        "camera_common_headers", 
+        "camera_fdleak_headers", 
+        "media_plugin_headers",
+    ],
+
+    cflags: [
+        "-DSYSTEM_HEADER_PREFIX=sys",
+        "-DUSE_ION",
+        "-D_ANDROID_",
+        "-DQCAMERA_REDEFINE_LOG",
+        "-DVENUS_PRESENT",
+        "-DFDLEAK_FLAG",
+        "-DMEMLEAK_FLAG",
+        "-DCAMERA_ION_HEAP_ID=ION_IOMMU_HEAP_ID",
+        "-DUSE_4_9_DEFS",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+    ],
+    ldflags: [
+        "-Wl,--wrap=open",
+        "-Wl,--wrap=close",
+        "-Wl,--wrap=socket",
+        "-Wl,--wrap=pipe",
+        "-Wl,--wrap=mmap",
+        "-Wl,--wrap=__open_2",
+        "-Wl,--wrap=malloc",
+        "-Wl,--wrap=free",
+        "-Wl,--wrap=realloc",
+        "-Wl,--wrap=calloc",
+    ],
+    include_dirs: ["system/media/camera/include",],
+    local_include_dirs: [
+        "inc",
+        "../common",
+        "../common/leak",
+    ],
+
+    srcs: [
+        "src/mm_camera_interface.c",
+        "src/mm_camera.c",
+        "src/mm_camera_muxer.c",
+        "src/mm_camera_channel.c",
+        "src/mm_camera_stream.c",
+        "src/mm_camera_thread.c",
+        "src/mm_camera_sock.c",
+    ],
+
+    shared_libs: [
+        "libdl",
+        "libcutils",
+        "liblog",
+        "libhal_dbg",
+    ],
+
+    vendor: true,
+	
+    compile_multilib: "32",
+
+}
