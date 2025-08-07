@@ -1,0 +1,61 @@
+cc_library_shared {
+    name: "libmmjpeg_interface",
+
+    header_libs: [
+        "libutils_headers", 
+        "media_plugin_headers",
+    ],
+
+    cflags: [
+        "-D_ANDROID_",
+        "-DQCAMERA_REDEFINE_LOG",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-parameter",
+        "-DUSE_ION",
+        "-DMM_JPEG_CONCURRENT_SESSIONS_COUNT=1",
+        "-DSYSTEM_HEADER_PREFIX=sys",
+		
+    ],
+
+    include_dirs: [
+        "system/core/libion/kernel-headers",
+        "system/core/libion/include",
+    ],
+
+    local_include_dirs: [
+        "inc",
+        "../common",
+        "../mm-camera-interface/inc",
+        "../../..",
+        "../../../mm-image-codec/qexif",
+        "../../../mm-image-codec/qomx_core",
+    ],
+
+    srcs: [
+        "src/mm_jpeg_queue.c",
+        "src/mm_jpeg_exif.c",
+        "src/mm_jpeg.c",
+        "src/mm_jpeg_interface.c",
+        "src/mm_jpeg_ionbuf.c",
+        "src/mm_jpegdec_interface.c",
+        "src/mm_jpegdec.c",
+        "src/mm_jpeg_mpo_composer.c",
+    ],
+
+
+    shared_libs: [
+        "libdl",
+        "libcutils",
+        "liblog",
+        "libqomx_core",
+        "libmmcamera_interface",
+        "libion",
+    ],
+    
+    vendor: true,
+
+    compile_multilib: "32",
+
+}
