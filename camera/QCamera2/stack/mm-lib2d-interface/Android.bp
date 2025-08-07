@@ -1,0 +1,44 @@
+
+cc_library_shared {
+    name: "libmmlib2d_interface",
+
+    cflags: [
+        "-D_ANDROID_",
+        "-DQCAMERA_REDEFINE_LOG",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-unused-parameter",
+        "-DUSE_ION",
+    ],
+    include_dirs: [
+        "system/core/libion/include",
+        "system/core/libion/kernel-headers",
+    ],
+    local_include_dirs: [
+        "inc",
+        "../common",
+        "../mm-camera-interface/inc",
+    ],
+
+    header_libs: ["libutils_headers",],
+
+    
+
+    srcs: ["src/mm_lib2d.c",],
+
+    
+
+    shared_libs: [
+        "libdl",
+        "libcutils",
+        "liblog",
+        "libmmcamera_interface",
+        "libion",
+    ],
+
+    vendor: true,
+
+    compile_multilib: "32",
+
+}
