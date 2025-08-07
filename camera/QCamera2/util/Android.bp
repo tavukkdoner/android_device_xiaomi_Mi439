@@ -1,0 +1,10 @@
+prebuilt_etc {
+    name: "cameraconfig.txt",
+
+    src: "cameraconfig.txt",
+
+    vendor: true,
+    sub_dir: "camera",
+    installable: true,
+    owner: "qti",
+}
