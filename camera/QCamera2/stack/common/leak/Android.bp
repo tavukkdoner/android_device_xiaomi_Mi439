@@ -7,9 +7,7 @@ cc_library_shared {
         "-D__BIONIC_FORTIFY",
     ],
     local_include_dirs: [
-        "../", 
         ".",
-        "../../mm-camera-interface/inc",
     ],
 
     header_libs: ["libutils_headers"],
