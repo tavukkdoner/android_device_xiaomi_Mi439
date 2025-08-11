@@ -46,7 +46,6 @@
 #include "fdleak.h"
 #include "memleak.h"
 #include <errno.h>
-#include "mm_camera_dbg.h"
 #define MAX_BACKTRACE_DEPTH 15
 #define MAGIC_ALLOC 0x7abc0fb5
 #define MAGIC_FREE 0x087cbc8a

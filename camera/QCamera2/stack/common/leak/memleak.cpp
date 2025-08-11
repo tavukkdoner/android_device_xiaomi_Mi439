@@ -36,8 +36,8 @@
 #include <string.h>
 #include <inttypes.h>
 #include <cutils/properties.h>
+#include <utils/Log.h>
 
-#include "mm_camera_dbg.h"
 #include "memleak.h"
 
 
@@ -301,7 +301,7 @@ void * __malloc(size_t size)
     return hdr + 1;
   }
 
-  LOGI("not enough memory.\n");
+  ALOGI("not enough memory.\n");
   pthread_mutex_unlock(&memory_mutex);
   return NULL;
 }
@@ -409,6 +409,6 @@ void hal_debug_dump_memleak_trace()
 }
 static __attribute__((destructor)) void finish(void)
 {
-  LOGI( "memleak lib deinit.\n");
+  ALOGI( "memleak lib deinit.\n");
   print_allocated_memory();
 }
