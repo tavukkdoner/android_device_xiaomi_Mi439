@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 #include <OMX_Image.h>
-#include <qexif.h>
+#include "qexif.h"
 
 /** qomx_image_eventd
 *  Qcom specific events extended from OMX_EVENT

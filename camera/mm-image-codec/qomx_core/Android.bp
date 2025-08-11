@@ -7,7 +7,7 @@ cc_library_shared {
         "-O0",
     ],
 
-    local_include_dirs: ["../qexif", ".",],
+    local_include_dirs: [".",],
 
     header_libs: [
         "libutils_headers",
