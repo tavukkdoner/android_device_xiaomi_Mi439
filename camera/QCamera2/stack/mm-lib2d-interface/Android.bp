@@ -12,8 +12,8 @@ cc_library_shared {
         "-DUSE_ION",
     ],
     include_dirs: [
-        "system/core/libion/include",
-        "system/core/libion/kernel-headers",
+        "system/memory/libion/include",
+        "system/memory/libion/kernel-headers",
     ],
     local_include_dirs: [
         "inc",
