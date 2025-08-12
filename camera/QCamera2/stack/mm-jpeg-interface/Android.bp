@@ -20,8 +20,8 @@ cc_library_shared {
     ],
 
     include_dirs: [
-        "system/core/libion/kernel-headers",
-        "system/core/libion/include",
+        "system/memory/libion/include",
+        "system/memory/libion/kernel-headers",
     ],
 
     local_include_dirs: [
