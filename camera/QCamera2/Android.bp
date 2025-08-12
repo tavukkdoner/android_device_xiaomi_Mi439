@@ -90,8 +90,8 @@ target_board_platform_cc_library_shared {
     "hardware/qcom-caf/msm8937/media/mm-core/inc",
   ],
   local_include_dirs: [
-    "../mm-image-codec/qexif",
-    "../mm-image-codec/qomx_core",
+    "mm-image-codec/qexif",
+    "mm-image-codec/qomx_core",
     "include",
     "stack/mm-camera-interface/inc",
     "util",

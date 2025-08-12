@@ -38,8 +38,6 @@ cc_library_shared {
     include_dirs: ["system/media/camera/include",],
     local_include_dirs: [
         "inc",
-        "../common",
-        "../common/leak",
     ],
 
     srcs: [

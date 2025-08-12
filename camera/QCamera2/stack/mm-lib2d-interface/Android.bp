@@ -17,8 +17,7 @@ cc_library_shared {
     ],
     local_include_dirs: [
         "inc",
-        "../common",
-        "../mm-camera-interface/inc",
+        "inc1",
     ],
 
     header_libs: ["libutils_headers",],

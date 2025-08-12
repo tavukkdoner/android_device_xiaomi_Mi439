@@ -26,11 +26,7 @@ cc_library_shared {
 
     local_include_dirs: [
         "inc",
-        "../common",
-        "../mm-camera-interface/inc",
-        "../../..",
-        "../../../mm-image-codec/qexif",
-        "../../../mm-image-codec/qomx_core",
+        "inc1",
     ],
 
     srcs: [
