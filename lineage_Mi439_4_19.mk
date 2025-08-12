@@ -18,6 +18,15 @@ TARGET_KERNEL_VERSION := 4.19
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="SDM439" \
+    RisingMaintainer="tavukkdoner"
+	
+RISING_BATTERY = 4000mAh
+RISING_STORAGE = 32GB
+RISING_RAM = 2GB
+RISING_DISPLAY = 720x1440
+
 # Overlays
 PRODUCT_PACKAGES += \
     xiaomi_pine_overlay_lineage \
