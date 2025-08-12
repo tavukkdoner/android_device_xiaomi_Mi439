@@ -83,8 +83,8 @@ target_board_platform_cc_library_shared {
     "-flto",
   ],
   include_dirs: [
-    "system/core/libion/kernel-headers",
-    "system/core/libion/include",
+    "system/memory/libion/include",
+    "system/memory/libion/kernel-headers",
     "hardware/qcom-caf/msm8937/media/libstagefrighthw",
     "hardware/qcom-caf/msm8937/media/mm-core/inc",
   ],
