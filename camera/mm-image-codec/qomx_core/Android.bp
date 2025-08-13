@@ -7,7 +7,8 @@ cc_library_shared {
         "-O0",
     ],
 
-    local_include_dirs: ["../qexif", ".",],
+    include_dirs: ["device/xiaomi/Mi439/camera/mm-image-codec/qexif",],
+    local_include_dirs: [".",],
 
     header_libs: [
         "libutils_headers",
