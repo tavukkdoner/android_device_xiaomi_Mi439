@@ -2,6 +2,11 @@
 cc_library_shared {
     name: "libmmlib2d_interface",
 
+    header_libs: [
+        "libutils_headers",
+        "generated_kernel_headers",
+    ],
+	
     cflags: [
         "-D_ANDROID_",
         "-DQCAMERA_REDEFINE_LOG",
@@ -14,14 +19,12 @@ cc_library_shared {
     include_dirs: [
         "system/memory/libion/include",
         "system/memory/libion/kernel-headers",
+        "device/xiaomi/Mi439/camera/QCamera2/stack/common",
+        "device/xiaomi/Mi439/camera/QCamera2/stack/mm-camera-interface/inc",
     ],
     local_include_dirs: [
         "inc",
-        "../common",
-        "../mm-camera-interface/inc",
     ],
-
-    header_libs: ["libutils_headers",],
 
     
 

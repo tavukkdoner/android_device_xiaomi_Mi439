@@ -7,6 +7,7 @@ cc_library_shared {
         "camera_common_headers", 
         "camera_fdleak_headers", 
         "media_plugin_headers",
+        "generated_kernel_headers",
     ],
 
     cflags: [
@@ -35,11 +36,13 @@ cc_library_shared {
         "-Wl,--wrap=realloc",
         "-Wl,--wrap=calloc",
     ],
-    include_dirs: ["system/media/camera/include",],
+    include_dirs: [
+        "system/media/camera/include",
+        "device/xiaomi/Mi439/camera/QCamera2/stack/common",
+        "device/xiaomi/Mi439/camera/QCamera2/stack/common/leak",
+    ],
     local_include_dirs: [
         "inc",
-        "../common",
-        "../common/leak",
     ],
 
     srcs: [

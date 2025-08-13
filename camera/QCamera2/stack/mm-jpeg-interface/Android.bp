@@ -4,6 +4,7 @@ cc_library_shared {
     header_libs: [
         "libutils_headers", 
         "media_plugin_headers",
+        "generated_kernel_headers",
     ],
 
     cflags: [
@@ -22,15 +23,15 @@ cc_library_shared {
     include_dirs: [
         "system/memory/libion/include",
         "system/memory/libion/kernel-headers",
+        "device/xiaomi/Mi439/camera/QCamera2/stack/common",
+        "device/xiaomi/Mi439/camera/QCamera2/stack/mm-camera-interface/inc",
+        "device/xiaomi/Mi439/camera",
+        "device/xiaomi/Mi439/camera/mm-image-codec/qexif",
+        "device/xiaomi/Mi439/camera/mm-image-codec/qomx_core",
     ],
 
     local_include_dirs: [
         "inc",
-        "../common",
-        "../mm-camera-interface/inc",
-        "../../..",
-        "../../../mm-image-codec/qexif",
-        "../../../mm-image-codec/qomx_core",
     ],
 
     srcs: [
