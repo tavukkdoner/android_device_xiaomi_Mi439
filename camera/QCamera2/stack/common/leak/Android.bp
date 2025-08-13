@@ -6,13 +6,18 @@ cc_library_shared {
         "-Wunused-parameter",
         "-D__BIONIC_FORTIFY",
     ],
+    include_dirs: [
+        "device/xiaomi/Mi439/camera/QCamera2/stack/common",
+        "device/xiaomi/Mi439/camera/QCamera2/stack/mm-camera-interface/inc",
+    ],
     local_include_dirs: [
-        "../", 
         ".",
-        "../../mm-camera-interface/inc",
     ],
 
-    header_libs: ["libutils_headers"],
+    header_libs: [
+        "libutils_headers",
+        "generated_kernel_headers",
+    ],
 
     srcs: [
         "fdleak.cpp",
