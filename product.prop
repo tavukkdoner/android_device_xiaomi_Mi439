@@ -54,3 +54,7 @@ pm.dexopt.post-boot.concurrency=2
 pm.dexopt.first-boot.concurrency=8
 pm.dexopt.boot-after-ota.concurrency=8
 pm.dexopt.boot-after-mainline-update.concurrency=8
+
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
