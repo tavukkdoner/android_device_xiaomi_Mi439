@@ -130,9 +130,6 @@ ifneq ($(WITH_GMS),true)
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1048576000 # 1000 MB
 endif
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
-
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
