@@ -50,3 +50,5 @@ pm.dexopt.post-boot.concurrency=4
 pm.dexopt.first-boot.concurrency=8
 pm.dexopt.boot-after-ota.concurrency=8
 pm.dexopt.boot-after-mainline-update.concurrency=8
+
+persist.sys.axion_cpu_big=0,1,2,3
