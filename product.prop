@@ -40,17 +40,25 @@ ro.config.avoid_gfx_accel=false
 sys.brightness.disable_gamma_conversion=true
 
 # Tune Dex2oat Parameters
-dalvik.vm.dex2oat-cpu-set=6,7
 dalvik.vm.dex2oat-swap=true
-dalvik.vm.dex2oat-threads=2
 dalvik.vm.background-dex2oat-cpu-set=6,7
 dalvik.vm.background-dex2oat-threads=2
 dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 dalvik.vm.boot-dex2oat-threads=8
-dalvik.vm.restore-dex2oat-cpu-set=6,7
-dalvik.vm.restore-dex2oat-threads=2
 pm.dexopt.bg-dexopt.concurrency=2
 pm.dexopt.post-boot.concurrency=2
 pm.dexopt.first-boot.concurrency=8
 pm.dexopt.boot-after-ota.concurrency=8
 pm.dexopt.boot-after-mainline-update.concurrency=8
+
+ro.mist.display=720 x 1440, 60 Hz
+ro.mist.battery=4000 mAh
+ro.mist.soc=SDM439
+ro.mist.camera=12 MP + 5 MP
+ro.mist.front=5 MP
+ro.mist.platform=MSM8937
+ro.mist.screen=IPS LCD
+ro.mist.device.name=Mi439
+persist.sys.axion_cpu_big=0,1,2,3
+persist.sys.axion_cpu_small=4,5,6,7
+
