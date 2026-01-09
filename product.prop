@@ -37,7 +37,7 @@ ro.config.max_starting_bg=3
 ro.config.avoid_gfx_accel=false
 
 # Brightness Curve
-sys.brightness.disable_gamma_conversion=true
+sys.brightness.disable_gamma_conversion=false
 
 # Tune Dex2oat Parameters
 dalvik.vm.dex2oat-cpu-set=6,7
