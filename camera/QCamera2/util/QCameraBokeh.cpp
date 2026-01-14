@@ -843,6 +843,7 @@ void QCameraBokeh::dumpYUVtoFile(
         }
         close(file_fd);
     }
+    LOGD("written_len: %d", written_len);
 
 }
 
