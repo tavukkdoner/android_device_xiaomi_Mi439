@@ -1762,6 +1762,7 @@ void mm_camera_muxer_channel_frame_sync(mm_camera_super_buf_t *super_buf,
             super_buf, NULL);
     mm_camera_muxer_channel_req_data_cb(NULL,
                 ch_obj);
+    LOGD("rc: %d", rc);
 }
 
 
