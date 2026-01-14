@@ -3269,6 +3269,7 @@ int32_t camera_open(uint8_t camera_idx, mm_camera_vtbl_t **camera_vtbl)
             pthread_mutex_lock(&cam_obj->cam_lock);
             pthread_mutex_unlock(&g_intf_lock);
             temp_rc = mm_camera_close(cam_obj);
+            LOGD("Camera is %d closed", temp_rc);
             pthread_mutex_destroy(&cam_obj->cam_lock);
             pthread_mutex_destroy(&cam_obj->muxer_lock);
             free(cam_obj);
