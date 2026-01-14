@@ -1276,6 +1276,7 @@ int QCamera3GrallocMemory::cacheOps(uint32_t index, unsigned int cmd)
 #else
     (void) cmd;
 #endif //TARGET_ION_ABI_VERSION
+    LOGD("needToInvalidate %d", needToInvalidate);
     return rc;
 }
 
