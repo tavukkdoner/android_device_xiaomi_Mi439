@@ -633,7 +633,8 @@ bool QCamera2Factory::isDualCamAvailable(int hal3Enabled)
 #ifdef QCAMERA_HAL1_SUPPORT
     return rc;
 #else
-    return false;
+    rc = false;
+    return rc;
 #endif
 }
 
