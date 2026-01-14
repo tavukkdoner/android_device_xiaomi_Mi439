@@ -403,7 +403,7 @@ void QCameraHALPP::dumpYUVtoFile(const uint8_t* pBuf, const char *name, ssize_t 
         ssize_t writen_bytes = 0;
         writen_bytes = write(file_fd, pBuf, buf_len);
         close(file_fd);
-        LOGD("dump output frame to file: %s, size:%d", name, buf_len);
+        LOGD("dump output frame to file: %s, size:%d, writen_bytes:%d", name, buf_len, writen_bytes);
     }
 
     LOGD("X.");
