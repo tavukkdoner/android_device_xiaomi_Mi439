@@ -142,6 +142,11 @@ ifeq ($(TARGET_USES_EROFS), true)
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 endif
 
+# MagicPortrait
+ifeq ($(TARGET_USES_MAGICPORTRAIT), true)
+$(call inherit-product-if-exists, vendor/mp/gms_magic_portrait.mk)
+endif
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/Mi439/Mi439-vendor.mk)
 
