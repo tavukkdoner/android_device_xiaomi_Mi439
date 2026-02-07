@@ -105,6 +105,7 @@ $(call soong_config_set_bool,livedisplay_sysfs,enable_ce,true)
 $(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
 $(call soong_config_set,qtipower,tap_to_wake_node,/proc/sys/dev/dt2w)
 
 # Recovery
