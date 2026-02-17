@@ -147,6 +147,15 @@ ifeq ($(TARGET_USES_MAGICPORTRAIT), true)
 $(call inherit-product-if-exists, vendor/mp/gms_magic_portrait.mk)
 endif
 
+# Glanceable Hub
+ifeq ($(TARGET_USES_GLANCEABLEHUB), true)
+PRODUCT_PACKAGES += \
+    GlanceableHubConfigOverlay1 \
+    GlanceableHubSettingsConfigOverlay1 \
+    GlanceableHubSettingsConfigOverlay20221 \
+    GlanceableHubSysuiConfigOverlay1
+endif
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/Mi439/Mi439-vendor.mk)
 
