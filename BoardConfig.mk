@@ -126,10 +126,6 @@ $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 41943040)) # 40 MB
 
-ifneq ($(TARGET_BUILD_GAPPS),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1048576000 # 1000 MB
-endif
-
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
