@@ -8,18 +8,21 @@ ro.lmk.upgrade_pressure=30
 ro.lmk.downgrade_pressure=60
 ro.lmk.kill_heaviest_task=false
 ro.lmk.use_minfree_levels=false
-ro.lmk.swap_free_low_percentage=5
-ro.lmk.thrashing_limit=50
+ro.lmk.swap_free_low_percentage=10
+ro.lmk.thrashing_limit=30
 ro.lmk.thrashing_limit_decay=30
 ro.lmk.lowmem_min_oom_score=701
 ro.lmk.use_psi=true
-ro.lmk.psi_partial_stall_ms=200
-ro.lmk.psi_complete_stall_ms=700
+ro.lmk.psi_partial_stall_ms=150
+ro.lmk.psi_complete_stall_ms=500
 ro.lmk.swap_util_max=100
 ro.lmk.log_stats=true
 ro.lmk.exclude_tasknames=true
 ro.lmk.excluded_tasknames=com.wstxda.viper4android,com.android.launcher3,com.android.webview
 ro.lmk.debug_mem_info=false
+ro.lmk.psi_window_size_ms=500
+ro.lmk.relaxed_available_memory=true
+sys.lmk.minfree_levels=18432:0,23040:100,27648:200,32256:300,40960:800,51200:900
 
 # Broadcast Parameters used isLowRamDeviceStatic values
 persist.device_config.activity_manager_native_boot.bcast_max_running_active_broadcasts=8
