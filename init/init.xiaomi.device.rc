@@ -138,7 +138,7 @@ on property:sys.boot_completed=1
 	
     # After boot time fs tuning
     write /sys/block/mmcblk0/queue/iostats 0
-    write /sys/block/mmcblk0/queue/scheduler mq-deadline
+    write /sys/block/mmcblk0/queue/scheduler bfq
     write /sys/block/mmcblk0/queue/nr_requests 128
 
 # FM
