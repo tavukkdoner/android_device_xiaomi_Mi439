@@ -4,6 +4,7 @@ soong_namespace {
         "hardware/qcom-caf/msm8937/display",
         "vendor/qcom/opensource/display",
         "vendor/xiaomi/mithorium-common-4.19",
+        "vendor/xiaomi/Mi439",
     ],
 }
 
