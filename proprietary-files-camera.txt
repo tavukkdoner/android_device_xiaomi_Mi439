@@ -7,6 +7,7 @@ vendor/bin/mm-qjpeg-dec-test
 vendor/bin/mm-qjpeg-enc-test
 vendor/bin/mm-qomx-idec-test
 vendor/bin/mm-qomx-ienc-test
+vendor/lib/android.frameworks.displayservice@1.0.so
 vendor/lib/libSNPE.so
 vendor/lib/libVDClearShot.so
 vendor/lib/libXMFD_AgeGender.so
@@ -115,6 +116,7 @@ vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
+vendor/lib64/android.frameworks.displayservice@1.0.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
 vendor/lib64/libmmcamera2_q3a_core.so
